@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My Template</title>
+
+  <!-- Bootstrap core CSS -->
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  
+<style>
+    .container {
+        margin: 0 auto;
+    display: table;
+    width: 600px;
+    background: black;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: inset 4px 4px 15px 0px #fff;
+    }
+    header {}
+    header h1{
+    width: 100%;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 800;
+    font-family: cursive;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #333;}
+    header .search{}
+    form {}
+form input[type="text"]{
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    display: table;
+    border-radius: 5px;
+    }
+    
+
+    .check-box {
+        padding: 14px;
+    /* margin-top: 21px; */
+    letter-spacing: 10px;
+    margin-left: -13px;
+    }
+
+#check-one,header .search #check-two{
+        width: 50px;
+    height: 50px;
+    float: left;
+    margin-left: 19px;
+    margin-top: 20px;
+    position: relative;
+    }
+    header .search #check-two{
+        
+    }
+#check-one:before{
+        position: absolute;
+    top: -22%;
+    left: -22%;
+    content: "";
+    background: green;
+    border-radius: 100px;
+    width: 140%;
+    height: 140%;
+    }
+
+ #check-two:before{
+        position: absolute;
+    top: -22%;
+    left: -22%;
+    content: "";
+    background: green;
+    border-radius: 100px;
+    width: 140%;
+    height: 140%;
+    }
+#check-one:checked:before,header .search #check-two:checked:before{
+    background: red;
+}
+#check-two:checked:before{
+    background: red;
+}
+
+
+#check-two:before{}
+#filter_search {
+        padding: 14px;
+    margin-top: 21px;
+    letter-spacing: 10px;
+    margin-left: 17px;
+    }
+    .content-area {
+               width: 88%;
+    background: url(wall2.jpg);
+    margin: 0 auto;
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin-top: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    }
+    .title {}
+    .title h1{}
+    @media (max-width: 500px) {
+        .container {
+            width: 90%;
+        }
+    }
+</style>
+
+</head>
+
+
+<body>
+<div class="container">
+<header>
+    <h1>This is my Phone</h1>
+    <form>
+        <input type="text" placeholder="SEARCH" id="search">
+        
+</header>
+  <div class="content-area">
+    <div class="title">
+        <h1></h1>
+    </div>
+        <p></p>
+    
+  </div>
+  <div class="search">
+      
+        <div class="check-box">
+
+        
+        <button type="button" class="btn btn-success col-md-offset-1" id="filter_search">Check IN</button>
+        <button type="button" class="btn btn-success col-md-offset-1" id="filter_search">Check OUT</button>
+         </div>
+    </form>
+    </div>        
+</div><!-- end of container  -->
+</body>
+</html>
